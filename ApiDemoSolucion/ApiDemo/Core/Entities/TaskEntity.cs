@@ -7,7 +7,7 @@ public class TaskEntity
 {
     public Guid Id { get; set; }
     public string Title { get; set; } = string.Empty;
-    public string? Description { get; set; }
+    public string? Description { get; set; } 
     public TaskStatusEnum Status { get; set; }
     public TaskPriorityEnum Priority { get; set; }
     public DateTime? StartDate { get; set; }
