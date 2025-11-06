@@ -35,9 +35,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new()
     {
-        Title = "Task Management API",
+    Title = "Task Management API",
         Version = "v1",
-        Description = "API RESTful para gestión de tareas con .NET 8",
+        Description = "API RESTful para gestiÃ³n de tareas con .NET 8",
         Contact = new() { Name = "API Demo", Email = "contact@taskmanagement.com" }
     });
 });
@@ -72,3 +72,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+// Make Program class accessible for testing
+public partial class Program { }
